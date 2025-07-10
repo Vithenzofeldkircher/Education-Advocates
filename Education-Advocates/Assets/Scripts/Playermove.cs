@@ -43,7 +43,7 @@ public class Playermove : MonoBehaviour
         }
 
         // Aplica movimento
-        body.velocity = new Vector2(horizontal, vertical) * speed;
+        body.linearVelocity = new Vector2(horizontal, vertical) * speed;
 
         // Disparo
         if (Input.GetButtonDown("Fire1"))
