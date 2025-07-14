@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Playermove : MonoBehaviour
 {
+    private float limitX;
+    private float limitY;
     private float horizontal;
     private float vertical;
 
@@ -51,6 +53,22 @@ public class Playermove : MonoBehaviour
             Instantiate(bullet, transform.position, transform.rotation);
         }
     }
-}
 
+    public void CamMax()
+    {
+
+
+        
+        {
+            Camera cam = Camera.main;
+            float height = 2f * cam.orthographicSize;
+            float width = height * cam.aspect;
+
+            // Define os limites da tela com base na câmera ortográfica
+            limitX = width / 2f;
+            limitY = height / 2f;
+        }
+
+    }
+}
 
