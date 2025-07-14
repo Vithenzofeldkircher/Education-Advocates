@@ -34,7 +34,7 @@ public class Playermove : MonoBehaviour
 
         if (Input.GetKey(KeyCode.S))
         {
-            vertical = 1;
+            vertical = -1;
         }
 
         if (Input.GetKey(KeyCode.W))
