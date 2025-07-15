@@ -2,19 +2,32 @@ using UnityEngine;
 
 public class SceneMove : MonoBehaviour
 {
-    public float speed = 5f;
-    public float screenLimitY = 1920f; // limite vertical
+    public float velocidade = 5f;
+
+    private float limiteSuperiorY;
+    private float limiteInferiorY;
+
+    void Start()
+    {
+        // Calcula limites da câmera
+        limiteSuperiorY = Camera.main.transform.position.y + Camera.main.orthographicSize;
+        limiteInferiorY = Camera.main.transform.position.y - Camera.main.orthographicSize;
+
+        // Começa em limite inferior (embaixo da tela)
+        Vector3 pos = transform.position;
+        pos.y = limiteInferiorY;
+        transform.position = pos;
+    }
 
     void Update()
     {
-        // Movimento contínuo para cima no eixo Y
-        transform.Translate(Vector3.up * speed * Time.deltaTime);
+        transform.Translate(Vector3.up * velocidade * Time.deltaTime);
 
-        // Loop infinito vertical: reaparece embaixo quando ultrapassa o topo
-        if (transform.position.y > screenLimitY)
+        if (transform.position.y > limiteSuperiorY)
         {
-            transform.position = new Vector3(transform.position.x, -screenLimitY, transform.position.z);
+            Vector3 pos = transform.position;
+            pos.y = limiteInferiorY;
+            transform.position = pos;
         }
     }
 }
-
