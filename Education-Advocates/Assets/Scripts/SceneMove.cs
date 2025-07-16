@@ -2,32 +2,20 @@ using UnityEngine;
 
 public class SceneMove : MonoBehaviour
 {
-    public float velocidade = 5f;
-
-    private float limiteSuperiorY;
-    private float limiteInferiorY;
-
-    void Start()
-    {
-        // Calcula limites da câmera
-        limiteSuperiorY = Camera.main.transform.position.y + Camera.main.orthographicSize;
-        limiteInferiorY = Camera.main.transform.position.y - Camera.main.orthographicSize;
-
-        // Começa em limite inferior (embaixo da tela)
-        Vector3 pos = transform.position;
-        pos.y = limiteInferiorY;
-        transform.position = pos;
-    }
+    public float speed = 2f; // velocidade do scroll
+    public float resetPositionY = 1920f; // posição Y para resetar
+    public float startPositionY = 10f; // nova posição Y ao resetar
 
     void Update()
     {
-        transform.Translate(Vector3.up * velocidade * Time.deltaTime);
+        // Move o fundo para baixo
+        transform.Translate(Vector2.down * speed * Time.deltaTime);
 
-        if (transform.position.y > limiteSuperiorY)
+        // Quando sair da tela, reposiciona no topo
+        if (transform.position.y <= resetPositionY)
         {
-            Vector3 pos = transform.position;
-            pos.y = limiteInferiorY;
-            transform.position = pos;
+            Vector2 newPos = new Vector2(transform.position.x, startPositionY);
+            transform.position = newPos;
         }
     }
 }
