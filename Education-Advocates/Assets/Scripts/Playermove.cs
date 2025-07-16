@@ -8,7 +8,7 @@ public class Playermove : MonoBehaviour
     private float vertical;
 
     public float speed;
-    public GameObject bullet;
+   
 
     Rigidbody2D body;
 
@@ -47,11 +47,7 @@ public class Playermove : MonoBehaviour
         // Aplica movimento
         body.linearVelocity = new Vector2(horizontal, vertical) * speed;
 
-        // Disparo
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Instantiate(bullet, transform.position, transform.rotation);
-        }
+
     }
 
     public void CamMax()
