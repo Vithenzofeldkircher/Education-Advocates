@@ -138,4 +138,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee4a30ebda800d846877f87892fdde47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDolaser: 2
+  velocidadeDolaser: 5
