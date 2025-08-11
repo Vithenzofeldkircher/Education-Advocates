@@ -162,4 +162,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d4478811e5d0540919c57bd2975247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempodeVida: 3.5
+  tempodeVida: 1.5
