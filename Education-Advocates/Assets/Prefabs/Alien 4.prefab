@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1331152238566961928}
   m_Layer: 0
   m_Name: Alien 4
-  m_TagString: Untagged
+  m_TagString: Inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,6 +107,8 @@ MonoBehaviour:
   tempoMaximoEntreOsLasers: 4
   tempoAtualDosLasers: 0
   InimigoAtirador: 1
+  VidaMaximaDoInimigo: 1
+  VidaAtualDoInimigo: 1
 --- !u!1 &7881334888194522389
 GameObject:
   m_ObjectHideFlags: 0
