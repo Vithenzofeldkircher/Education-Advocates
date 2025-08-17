@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b7a81060bc8f51498607c585d8447f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeDolaser: 6
+  velocidadeDolaser: 16
   DanoparaDar: 3
 --- !u!114 &4735962113107122653
 MonoBehaviour:

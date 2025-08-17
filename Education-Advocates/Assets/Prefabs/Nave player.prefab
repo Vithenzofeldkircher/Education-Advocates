@@ -104,8 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b98d9fea03e9d0545a6a0aa17cde851c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VidaMaximadoPlayer: 5
-  VidaatualDoPlayer: 5
+  VidaMaximadoPlayer: 15
+  VidaatualDoPlayer: 15
 --- !u!114 &2882368433047229347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserDojogador: {fileID: 2185092473698855770, guid: c33beb1ab0ece884289834607c4d6267, type: 3}
   LocalDoDisparo: {fileID: 8225303988581694658}
-  velocidadeDaNave: 5
+  velocidadeDaNave: 8
   body: {fileID: 5442170796471366169}
 --- !u!61 &3354201245294854589
 BoxCollider2D:

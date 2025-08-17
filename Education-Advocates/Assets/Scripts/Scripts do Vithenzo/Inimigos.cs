@@ -18,7 +18,7 @@ public class Inimigos : MonoBehaviour
 
     public int VidaAtualDoInimigo;
 
-
+    public int SaberParaDar;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -59,9 +59,11 @@ public class Inimigos : MonoBehaviour
 
         if(VidaAtualDoInimigo <= 0)
         {
+            GameManeger.instance.AumentarSaber(SaberParaDar);
             Destroy(this.gameObject);
         }
     }
+
 
 
 }
