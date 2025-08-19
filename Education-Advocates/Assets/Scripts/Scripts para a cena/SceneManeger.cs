@@ -16,7 +16,7 @@ public class SceneManeger : MonoBehaviour
 
     public void TrocaDeCena1()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Vithenzo");
     }
 
     public void TrocaDeCena2()
