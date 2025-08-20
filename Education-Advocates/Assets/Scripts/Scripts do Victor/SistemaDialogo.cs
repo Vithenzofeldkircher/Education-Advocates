@@ -18,12 +18,15 @@ public class SistemaDialogo : MonoBehaviour
     bool finished = false;
 
     ScriptDialogo typeText;
+    ScriptNome scriptNome;
 
     STATE state;
 
     void Awake()
     {
-        typeText = FindObjectOfType<ScriptDialogo>();
+        typeText = FindAnyObjectByType<ScriptDialogo>();
+        scriptNome = FindAnyObjectByType<ScriptNome>();
+
         typeText.TypeFinished = OnTypeFinished;
     }
 
@@ -49,6 +52,8 @@ public class SistemaDialogo : MonoBehaviour
 
     public void Next()
     {
+        scriptNome.SetName(dialogueData.talkScript[currentText].name);
+
         typeText.fullText = dialogueData.talkScript[currentText++].text;
         if (currentText == dialogueData.talkScript.Count) finished = true;
         typeText.StartTyping();
