@@ -6,6 +6,8 @@ public class Inimigos : MonoBehaviour
 
     public Transform LocalDoDisparo;
 
+    public GameObject ItemParaDropar;
+
     public float velocidadeDoInimigo;
 
     public float tempoMaximoEntreOsLasers;
@@ -19,6 +21,9 @@ public class Inimigos : MonoBehaviour
     public int VidaAtualDoInimigo;
 
     public int SaberParaDar;
+
+    public int chanceParaDropar;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -60,6 +65,15 @@ public class Inimigos : MonoBehaviour
         if(VidaAtualDoInimigo <= 0)
         {
             GameManeger.instance.AumentarSaber(SaberParaDar);
+
+            int numeroAleatorio = Random.Range(0, 100);
+            
+            if(numeroAleatorio <= chanceParaDropar)
+            {
+                Instantiate(ItemParaDropar, transform.position, Quaternion.Euler(0f, 0f, 0f));
+            }
+           
+            
             Destroy(this.gameObject);
         }
     }

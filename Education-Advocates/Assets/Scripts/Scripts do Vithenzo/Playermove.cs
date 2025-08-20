@@ -12,8 +12,21 @@ public class Playermove : MonoBehaviour
 
     public Rigidbody2D body;
 
+    public Transform LocalDoDisparoDaEsquerda;
+
+    public Transform LocalDODisparoDaDireita;
+
+    public float TempoMaximoDosLasersDuplos;
+
+    public float TempoAtualDosLasersDuplos;
+
+    public bool temLaserDuplo;
+
     void Start()
     {
+        temLaserDuplo = false;
+
+        TempoAtualDosLasersDuplos = TempoMaximoDosLasersDuplos;
         body = GetComponent<Rigidbody2D>();
     }
 
@@ -22,6 +35,16 @@ public class Playermove : MonoBehaviour
         AtirarlazerDoPlayer();
 
         MovimentarJogador();
+
+        if(temLaserDuplo == true)
+        {
+            TempoAtualDosLasersDuplos -= Time.deltaTime;
+
+            if(TempoAtualDosLasersDuplos <= 0)
+            {
+                DesativarLaserDuplo();
+            }
+        }
     }
 
     public void MovimentarJogador()
@@ -34,10 +57,22 @@ public class Playermove : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(laserDojogador, LocalDoDisparo.position, LocalDoDisparo.rotation);
+            if (temLaserDuplo == false)
+            {
+                Instantiate(laserDojogador, LocalDoDisparo.position, LocalDoDisparo.rotation);
+            }
+            else
+            {
+                Instantiate(laserDojogador, LocalDoDisparoDaEsquerda.position, LocalDoDisparo.rotation);
+                Instantiate(laserDojogador, LocalDODisparoDaDireita.position, LocalDoDisparo.rotation);
+            }
         }
     }
 
-    
+   private void DesativarLaserDuplo()
+    {
+        temLaserDuplo = false;
+        TempoAtualDosLasersDuplos = TempoMaximoDosLasersDuplos;
+    }
 }
 
