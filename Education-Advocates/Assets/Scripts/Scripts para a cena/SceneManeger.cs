@@ -13,14 +13,32 @@ public class SceneManeger : MonoBehaviour
     {
         
     }
-
+    public void TrocaDeCena()
+    {
+        SceneManager.LoadScene("Start");
+    }
     public void TrocaDeCena1()
     {
-        SceneManager.LoadScene("Vithenzo");
+        SceneManager.LoadScene("escola");
     }
 
     public void TrocaDeCena2()
     {
-        SceneManager.LoadScene("Créditos");
+        SceneManager.LoadScene("Rua");
+    }
+
+    public void TrocaDeCena3()
+    {
+        SceneManager.LoadScene("Quarto");
+    }
+
+    public void TrocaDeCena4()
+    {
+        SceneManager.LoadScene("Mesa");
+    }
+
+    public void TrocaDeCena5()
+    {
+        SceneManager.LoadScene("Vithenzo");
     }
 }
