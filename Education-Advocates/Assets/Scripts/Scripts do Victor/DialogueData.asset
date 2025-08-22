@@ -13,15 +13,17 @@ MonoBehaviour:
   m_Name: DialogueData
   m_EditorClassIdentifier: 
   talkScript:
-  - name: Henrique
-    text: Onde estou?
-  - name: ???
-    text: Boa tarde!
-  - name: Henrique
-    text: "Ol\xE1! Qual \xE9 o seu nome?"
-  - name: CatGPT
-    text: "Meu nome \xE9 CatGPT, \xE9 um prazer te conhecer"
-  - name: Henrique
-    text: "O que voc\xEA est\xE1 fazendo aqui?"
-  - name: CatGPT
-    text: "Eu n\xE3o sei, mas estou aqui para te ajudar!"
+  - name: "Cau\xE3"
+    text: Oi eu sou um aluno do Senac!!!!!!
+  - name: Jesus
+    text: IU SUE DU SNCAC
+  - name: "Cua\xE3"
+    text: Q?????
+  - name: Jesus
+    text: "H\xE3n?"
+  - name: "Cau\xE3"
+    text: '???????
+
+'
+  - name: jESUS
+    text: Sim.
