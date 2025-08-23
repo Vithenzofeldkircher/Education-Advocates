@@ -13,15 +13,17 @@ MonoBehaviour:
   m_Name: DialogueData
   m_EditorClassIdentifier: 
   talkScript:
-  - name: Player
-    text: "adgibeas\xE7gheashg"
-  - name: Personagem
-    text: wgawhaujha
-  - name: Player
-    text: awgwahgawhu
-  - name: Personagem
-    text: awgawhyawh
-  - name: Player
-    text: awghayh
-  - name: Personagem
-    text: grshesjueshuy
+  - name: "Cau\xE3"
+    text: Oi eu sou um aluno do Senac!!!!!!
+  - name: Jesus
+    text: IU SUE DU SNCAC
+  - name: "Cua\xE3"
+    text: Q?????
+  - name: Jesus
+    text: "H\xE3n?"
+  - name: "Cau\xE3"
+    text: '???????
+
+'
+  - name: jESUS
+    text: Sim.
