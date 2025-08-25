@@ -13,17 +13,19 @@ MonoBehaviour:
   m_Name: DialogueDataEscola
   m_EditorClassIdentifier: 
   talkScript:
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
+  - name: Professor
+    text: Henrique vem aqui um pouco.
+  - name: Henrique
+    text: slk q que eu fiz agora vey?
+  - name: Professor
+    text: "Infelizmente voc\xEA n\xE3o passou na minha mat\xE9ria. A recupera\xE7\xE3o
+      vai ser na pr\xF3xima Segunda. Recomendo que voc\xEA estude."
+  - name: Henrique
+    text: "co\xE9 dog, como assim par\xE7a? eu n\xE3o passei?"
+  - name: Professor
+    text: "Lamentavelmente n\xE3o, a mat\xE9ria da prova ser\xE1 sobre o An\xEDsio
+      Teixeira."
+  - name: Henrique
+    text: "quem q \xE9 esse mano ae?"
+  - name: Professor
+    text: Estude-o para a prova, vai ser importante no seu boletim.

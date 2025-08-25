@@ -608,6 +608,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4649876501355289520, guid: 2e715abaf7e8e7644a322bb9bea6cf47, type: 3}
+      propertyPath: fullText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4649876501355289520, guid: 2e715abaf7e8e7644a322bb9bea6cf47, type: 3}
       propertyPath: textObject
       value: 
       objectReference: {fileID: 2075045215}

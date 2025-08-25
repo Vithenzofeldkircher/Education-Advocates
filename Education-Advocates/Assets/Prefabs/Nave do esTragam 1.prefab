@@ -105,7 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LaserDoInimigo: {fileID: 5837037942440342857, guid: 042f5c9dc5a86c64eaa7692fa2c33960, type: 3}
   LocalDoDisparo: {fileID: 3276400796251447878}
-  ItemParaDropar: {fileID: 3774661344160236707, guid: 60479845b60ca1c4aa50600ea55f38f6, type: 3}
+  ItemParaDropar: {fileID: 6556239958815226899, guid: d467152b9fa8e0642972fbf5c6a359ce, type: 3}
   velocidadeDoInimigo: 14
   tempoMaximoEntreOsLasers: 2
   tempoAtualDosLasers: 15

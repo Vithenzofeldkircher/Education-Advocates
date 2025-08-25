@@ -13,17 +13,37 @@ MonoBehaviour:
   m_Name: DialogueDataRua
   m_EditorClassIdentifier: 
   talkScript:
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
+  - name: Henrique
+    text: "t\xE1 tirando n\xE9 z\xE9 (resmungando)"
+  - name: "Tio Z\xE9"
+    text: Que foi pirralho? Aconteceu alguma coisa?
+  - name: Henrique
+    text: "ah vey, o prof de hist\xF3ria queimo minha fita tlg?"
+  - name: "Tio Z\xE9"
+    text: Como assim fedelho?
+  - name: Henrique
+    text: "me reprovou por nada tlg, ele s\xF3 quer encher meu saco!"
+  - name: "Tio Z\xE9"
+    text: "Quantos pontos falta para voc\xEA passar?"
+  - name: Henrique
+    text: "uns 8 s\xF3 dog, fichinha"
+  - name: "Tio Z\xE9"
+    text: 8 PONTOS?!?!?!?!
+  - name: "Tio Z\xE9"
+    text: "Vai ter recupera\xE7\xE3o???"
+  - name: Henrique
+    text: "\xE9 n\xE9, vou colar do meu par\xE7a cleitin z\xE9"
+  - name: "Tio Z\xE9"
+    text: O que vai cair na prova?
+  - name: Henrique
+    text: "um mano chamado, acho que, Ant\xF4nio Peixeira"
+  - name: "Tio Z\xE9"
+    text: "Ahhhh, eu conhe\xE7o esse cidad\xE3o, se chama An\xEDsio Teixeira."
+  - name: Henrique
+    text: "co\xE9 par\xE7a, q q esse moleque a\xED fez de \xFAtil?"
+  - name: "Tio Z\xE9"
+    text: '(Entrega um livro para Henrique)
+
+'
+  - name: "Tio Z\xE9"
+    text: Estuda isso aqui.

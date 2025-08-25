@@ -13,17 +13,14 @@ MonoBehaviour:
   m_Name: DialogueDataQuarto
   m_EditorClassIdentifier: 
   talkScript:
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: 
-    text: 
-  - name: jESUS
-    text: 
+  - name: Henrique
+    text: "\xE9 n\xE9... v\xF4 te que d\xE1 uma bizoiada nesse livro aqui..."
+  - name: Henrique
+    text: "\"An\xEDsio Sp\xEDnola Teixeira foi um jurista, intelectual, educador
+      e escritor brasileiro.\""
+  - name: Henrique
+    text: "\"Ca...Caetit\xE9 tlg, no dia 12 de jul...ho de 1900 no Rio de Janeiro
+      e mor...reu em 11 de mar\xE7o de 1971.\""
+  - name: Henrique
+    text: "\"Figura impo... rtante na hist\xF3ria daaaaa con...stru\xE7\xE3o da educa\xE7\xE3o
+      p\xFAblica... gratuita... laica e..."
