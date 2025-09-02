@@ -41,4 +41,15 @@ public class SceneManeger : MonoBehaviour
     {
         SceneManager.LoadScene("Vithenzo");
     }
+
+    public void Reiniciar()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Sair()
+    {
+        Application.Quit();
+    }
 }

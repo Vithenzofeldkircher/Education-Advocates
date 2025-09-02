@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadeDolaser: 16
-  DanoparaDar: 3
+  DanoparaDar: 1
 --- !u!114 &2928512789080906294
 MonoBehaviour:
   m_ObjectHideFlags: 0

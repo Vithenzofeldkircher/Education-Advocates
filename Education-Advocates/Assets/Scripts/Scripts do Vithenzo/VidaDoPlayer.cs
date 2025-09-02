@@ -21,6 +21,8 @@ public class VidaDoPlayer : MonoBehaviour
 
     public int vidaParaReceber;
 
+    public GameObject telaDerrota;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -82,10 +84,12 @@ public class VidaDoPlayer : MonoBehaviour
 
         }
 
-            if (VidaatualDoPlayer <= 0)
-            {
-            Debug.Log("game over");
-             }
+        if (VidaatualDoPlayer <= 0)
+        {
+            if (telaDerrota != null)
+                telaDerrota.SetActive(true);
+            Time.timeScale = 0f;
+        }
 
         else
         {
