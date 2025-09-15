@@ -16,6 +16,8 @@ public class Inimigos : MonoBehaviour
 
     public bool InimigoAtirador;
 
+    public bool InimigoAtivado;
+
     public int VidaMaximaDoInimigo;
 
     public int VidaAtualDoInimigo;
@@ -27,7 +29,7 @@ public class Inimigos : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        InimigoAtivado = false;
     }
 
     // Update is called once per frame
@@ -35,11 +37,17 @@ public class Inimigos : MonoBehaviour
     {
         MovimentarInimigo();
 
-        if(InimigoAtirador == true)
+        if(InimigoAtirador == true && InimigoAtivado == true)
         {
             AtirarLaser();
         }
         
+    }
+
+
+    public void AtivarInimigo()
+    {
+        InimigoAtivado = true;
     }
 
     public void MovimentarInimigo()

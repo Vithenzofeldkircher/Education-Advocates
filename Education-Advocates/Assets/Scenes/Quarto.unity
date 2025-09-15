@@ -204,7 +204,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1799074893}
         m_TargetAssemblyTypeName: SceneManeger, Assembly-CSharp
-        m_MethodName: TrocaDeCena4
+        m_MethodName: TrocaDeCenaGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
