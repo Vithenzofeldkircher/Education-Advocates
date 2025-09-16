@@ -44,12 +44,6 @@ public class Inimigos : MonoBehaviour
         
     }
 
-
-    public void AtivarInimigo()
-    {
-        InimigoAtivado = true;
-    }
-
     public void MovimentarInimigo()
     {
         transform.Translate(Vector3.down * velocidadeDoInimigo * Time.deltaTime);
