@@ -291,7 +291,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1987248248}
         m_TargetAssemblyTypeName: SceneManeger, Assembly-CSharp
-        m_MethodName: TrocaDeCena2
+        m_MethodName: TrocaDeCenaRua
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
