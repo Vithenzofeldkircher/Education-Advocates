@@ -42,6 +42,11 @@ public class SceneManeger : MonoBehaviour
         SceneManager.LoadScene("Vithenzo");
     }
 
+    public void TrocaDeCenaCreditos()
+    {
+        SceneManager.LoadScene("Créditos");
+    }
+
     public void Reiniciar()
     {
         Time.timeScale = 1f;
