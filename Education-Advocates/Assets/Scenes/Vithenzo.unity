@@ -878,6 +878,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5828879977614492376, guid: 1925e2ed323eaf441a583d145add229d, type: 3}
     - target: {fileID: 2001693583431628046, guid: 67db14328257886449996ba41f709709, type: 3}
+      propertyPath: InimigoAtirador
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2001693583431628046, guid: 67db14328257886449996ba41f709709, type: 3}
       propertyPath: chanceParaDropar
       value: 100
       objectReference: {fileID: 0}
@@ -1210,7 +1214,7 @@ PrefabInstance:
       objectReference: {fileID: 1656865153}
     - target: {fileID: 943699816932585063, guid: d7d1410e922549e499056d22d4b891c5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TrocaDeCena
+      value: TrocaDeCenaStart
       objectReference: {fileID: 0}
     - target: {fileID: 943699816932585063, guid: d7d1410e922549e499056d22d4b891c5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1304,7 +1308,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 541968682785809115, guid: d7d1410e922549e499056d22d4b891c5, type: 3}
+    - {fileID: 4380985061651461858, guid: d7d1410e922549e499056d22d4b891c5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1960,7 +1966,7 @@ PrefabInstance:
       objectReference: {fileID: 638951200}
     - target: {fileID: 3650733429501355049, guid: c08ab828f5052ec478b300f031b8e2e4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TrocaDeCena5
+      value: TrocaDeCenaGame
       objectReference: {fileID: 0}
     - target: {fileID: 3650733429501355049, guid: c08ab828f5052ec478b300f031b8e2e4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -2056,7 +2062,7 @@ PrefabInstance:
       objectReference: {fileID: 1676453691}
     - target: {fileID: 5362379409283932541, guid: c08ab828f5052ec478b300f031b8e2e4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TrocaDeCena
+      value: TrocaDeCenaStart
       objectReference: {fileID: 0}
     - target: {fileID: 5362379409283932541, guid: c08ab828f5052ec478b300f031b8e2e4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -2070,7 +2076,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7286019697258974692, guid: c08ab828f5052ec478b300f031b8e2e4, type: 3}
+    - {fileID: 2256839923613880057, guid: c08ab828f5052ec478b300f031b8e2e4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

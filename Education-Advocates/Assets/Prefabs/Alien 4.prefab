@@ -110,6 +110,7 @@ MonoBehaviour:
   tempoMaximoEntreOsLasers: 4
   tempoAtualDosLasers: 0
   InimigoAtirador: 1
+  InimigoAtivado: 1
   VidaMaximaDoInimigo: 1
   VidaAtualDoInimigo: 1
   SaberParaDar: 20
