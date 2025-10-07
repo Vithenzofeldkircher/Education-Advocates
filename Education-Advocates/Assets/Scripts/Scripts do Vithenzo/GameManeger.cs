@@ -13,7 +13,7 @@ public class GameManeger : MonoBehaviour
     public GameObject telaDerrota;
 
     // Variável para a referência do script de vida do player
-    private VidaDoPlayer VidaDoPlayerScript;
+    private VidaDoPlayer VidaatualDoPlayer;
 
     void Awake()
     {
@@ -33,11 +33,10 @@ public class GameManeger : MonoBehaviour
 
         if (playerObject != null)
         {
-            
-            VidaDoPlayerScript = playerObject.GetComponent<VidaDoPlayer>();
+
+            VidaatualDoPlayer = playerObject.GetComponent<VidaDoPlayer>();
         }
 
-        // Configurações iniciais
         Time.timeScale = 1f;
         SaberAtual = 0;
         TextodeSaberAtual.text = "Saber: " + SaberAtual;
@@ -80,19 +79,18 @@ public class GameManeger : MonoBehaviour
 
     public void TelaDeDerrota()
     {
-        // 1. Verifica se a referência é válida E se a vida <= 0
-        if (VidaDoPlayerScript != null && VidaDoPlayerScript.VidaatualDoPlayer <= 0)
+        // Verifica se a referência é válida E se a vida <= 0
+        if (VidaatualDoPlayer != null && VidaatualDoPlayer.VidaatualDoPlayer <= 0)
         {
             
             if (Time.timeScale == 0f) return;
 
-            // 2. Mostra a tela de derrota tlg
+            // Mostra a tela de derrota
             if (telaDerrota != null)
             {
                 telaDerrota.SetActive(true);
             }
 
-            // 3. PAUSA O JOGO na hora da play
             Time.timeScale = 0f;
         }
     }
