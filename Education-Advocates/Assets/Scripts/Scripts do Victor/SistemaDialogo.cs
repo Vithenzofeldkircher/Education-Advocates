@@ -19,7 +19,7 @@ public class SistemaDialogo : MonoBehaviour
 
     ScriptDialogo typeText;
     DialogueUI dialogueUI;
-    GameManeger gameManager;
+    GameManeger GameManeger;
 
     STATE state;
 
@@ -27,7 +27,7 @@ public class SistemaDialogo : MonoBehaviour
     {
         typeText = FindAnyObjectByType<ScriptDialogo>();
         dialogueUI = FindAnyObjectByType<DialogueUI>();
-        gameManager = GameManeger.instance; // acesso ao GameManeger
+        GameManeger = GameManeger.instance; // acesso ao GameManeger
 
         typeText.TypeFinished = OnTypeFinished;
     }
@@ -54,11 +54,11 @@ public class SistemaDialogo : MonoBehaviour
         // Teste: tecla S aumenta o saber
         if (Input.GetKeyDown(KeyCode.S))
         {
-            gameManager.AumentarSaber(100);
+            GameManeger.AumentarSaber(100);
         }
 
         // Inicia o diálogo quando alcançar 700 de saber
-        if (!dialogoIniciado && gameManager.SaberAtual >= 40)
+        if (!dialogoIniciado && GameManeger.SaberAtual >= 40)
         {
             dialogoIniciado = true;
             state = STATE.WAITING;

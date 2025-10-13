@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 78126939}
   - component: {fileID: 78126938}
   - component: {fileID: 78126942}
-  - component: {fileID: 78126943}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -241,23 +240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6cc1fa75b25804983743360696ca36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &78126943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78126936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d61aefc2d0c4d34fb0dbe3c41fec15a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SaberAtual: 0
-  pontosParaVitoria: 150
-  TextodeSaberAtual: {fileID: 164017378}
-  telaVitoria: {fileID: 2119853833}
-  telaDerrota: {fileID: 322421636}
 --- !u!1 &162954357
 GameObject:
   m_ObjectHideFlags: 0
@@ -3427,10 +3409,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SaberAtual: 0
-  pontosParaVitoria: 150
-  TextodeSaberAtual: {fileID: 0}
-  telaVitoria: {fileID: 0}
-  telaDerrota: {fileID: 0}
+  pontosParaVitoria: 5000
+  TextodeSaberAtual: {fileID: 164017378}
+  telaVitoria: {fileID: 2119853833}
+  telaDerrota: {fileID: 322421636}
 --- !u!4 &2029196352
 Transform:
   m_ObjectHideFlags: 0
