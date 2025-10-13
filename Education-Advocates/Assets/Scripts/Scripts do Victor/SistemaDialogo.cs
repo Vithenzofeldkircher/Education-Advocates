@@ -1,7 +1,6 @@
 using System;
 using TMPro;
 using UnityEngine;
-using System.Collections;
 
 public enum STATE
 {
@@ -14,16 +13,13 @@ public class SistemaDialogo : MonoBehaviour
 {
     public DialogueData dialogueData;
 
-    public int SaberAtual;
-    public TMP_Text TextodeSaberAtual;
-
     bool dialogoIniciado = false;
-
     int currentText = 0;
     bool finished = false;
 
     ScriptDialogo typeText;
     DialogueUI dialogueUI;
+    GameManeger GameManeger;
 
     STATE state;
 
@@ -31,6 +27,7 @@ public class SistemaDialogo : MonoBehaviour
     {
         typeText = FindAnyObjectByType<ScriptDialogo>();
         dialogueUI = FindAnyObjectByType<DialogueUI>();
+        GameManeger = GameManeger.instance; // acesso ao GameManeger
 
         typeText.TypeFinished = OnTypeFinished;
     }
@@ -54,13 +51,14 @@ public class SistemaDialogo : MonoBehaviour
                 break;
         }
 
+        // Teste: tecla S aumenta o saber
         if (Input.GetKeyDown(KeyCode.S))
         {
-            SaberAtual += 100;
-            TextodeSaberAtual.text = SaberAtual.ToString();
+            GameManeger.AumentarSaber(100);
         }
 
-        if (!dialogoIniciado && SaberAtual >= 700)
+        // Inicia o diálogo quando alcançar 700 de saber
+        if (!dialogoIniciado && GameManeger.SaberAtual >= 40)
         {
             dialogoIniciado = true;
             state = STATE.WAITING;
@@ -70,7 +68,7 @@ public class SistemaDialogo : MonoBehaviour
 
     public void Next()
     {
-        if(currentText == 0)
+        if (currentText == 0)
         {
             dialogueUI.Enable();
         }
@@ -112,14 +110,6 @@ public class SistemaDialogo : MonoBehaviour
         {
             typeText.Skip();
             state = STATE.WAITING;
-        }
-    }
-
-    public void ComecarTexto()
-    {
-        if(SaberAtual == 700)
-        {
-            Waiting();
         }
     }
 }
