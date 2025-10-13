@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class GameManeger : MonoBehaviour
 {
     public int SaberAtual;
@@ -8,7 +8,7 @@ public class GameManeger : MonoBehaviour
 
     public static GameManeger instance;
 
-    public Text TextodeSaberAtual;
+    [SerializeField] TMP_Text TextodeSaberAtual;
     public GameObject telaVitoria;
     public GameObject telaDerrota;
 
