@@ -14,6 +14,11 @@ public class SistemaDialogo : MonoBehaviour
 {
     public DialogueData dialogueData;
 
+    public int SaberAtual;
+    public TMP_Text TextodeSaberAtual;
+
+    bool dialogoIniciado = false;
+
     int currentText = 0;
     bool finished = false;
 
@@ -47,6 +52,19 @@ public class SistemaDialogo : MonoBehaviour
             case STATE.TYPING:
                 Typing();
                 break;
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            SaberAtual += 100;
+            TextodeSaberAtual.text = SaberAtual.ToString();
+        }
+
+        if (!dialogoIniciado && SaberAtual >= 700)
+        {
+            dialogoIniciado = true;
+            state = STATE.WAITING;
+            Next();
         }
     }
 
@@ -94,6 +112,14 @@ public class SistemaDialogo : MonoBehaviour
         {
             typeText.Skip();
             state = STATE.WAITING;
+        }
+    }
+
+    public void ComecarTexto()
+    {
+        if(SaberAtual == 700)
+        {
+            Waiting();
         }
     }
 }
