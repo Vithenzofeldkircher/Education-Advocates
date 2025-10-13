@@ -3353,6 +3353,10 @@ PrefabInstance:
       propertyPath: dialogueData
       value: 
       objectReference: {fileID: 11400000, guid: 9b2771e3b927ba24fbcf82d984e551e1, type: 2}
+    - target: {fileID: 4942090265720026270, guid: 2e715abaf7e8e7644a322bb9bea6cf47, type: 3}
+      propertyPath: TextodeSaberAtual
+      value: 
+      objectReference: {fileID: 164017378}
     - target: {fileID: 5637303744713743759, guid: 2e715abaf7e8e7644a322bb9bea6cf47, type: 3}
       propertyPath: m_Name
       value: DialogueManager
