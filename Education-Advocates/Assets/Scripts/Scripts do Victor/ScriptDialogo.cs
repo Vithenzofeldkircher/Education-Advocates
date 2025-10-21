@@ -8,7 +8,7 @@ public class ScriptDialogo : MonoBehaviour
     public float typeDelay = 0.05f;
     public TMPro.TextMeshProUGUI textObject;
 
-    public string fullText;
+
 
     Coroutine coroutine;
 
@@ -24,7 +24,6 @@ public class ScriptDialogo : MonoBehaviour
 
     IEnumerator TypeText()
     {
-        textObject.text = fullText;
         textObject.maxVisibleCharacters = 0;
         for (int i = 0; i <= textObject.text.Length; i++)
         {

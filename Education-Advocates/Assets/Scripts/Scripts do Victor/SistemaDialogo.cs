@@ -51,12 +51,6 @@ public class SistemaDialogo : MonoBehaviour
                 break;
         }
 
-        // Teste: tecla S aumenta o saber
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            GameManeger.AumentarSaber(100);
-        }
-
         // Inicia o diálogo quando alcançar 700 de saber
         if (!dialogoIniciado && GameManeger.SaberAtual >= 40)
         {
@@ -74,8 +68,6 @@ public class SistemaDialogo : MonoBehaviour
         }
 
         dialogueUI.SetName(dialogueData.talkScript[currentText].name);
-
-        typeText.fullText = dialogueData.talkScript[currentText++].text;
         if (currentText == dialogueData.talkScript.Count) finished = true;
         typeText.StartTyping();
         state = STATE.TYPING;
