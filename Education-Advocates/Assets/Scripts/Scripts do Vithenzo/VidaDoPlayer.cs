@@ -1,6 +1,7 @@
 using UnityEngine;
 using Unity.UI;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class VidaDoPlayer : MonoBehaviour
 {
     public int VidaMaximadoPlayer;
@@ -61,18 +62,25 @@ public class VidaDoPlayer : MonoBehaviour
     
     public void GanharVida(int VidaRecuperada)
     {
-        if(VidaatualDoPlayer + VidaRecuperada <= VidaatualDoPlayer)
+        if (VidaatualDoPlayer + VidaRecuperada <= VidaMaximadoPlayer)
         {
-            VidaatualDoPlayer += vidaParaReceber;
+            VidaatualDoPlayer += VidaRecuperada;
         }
-
         else
         {
             VidaatualDoPlayer = VidaMaximadoPlayer;
         }
 
         BarradeVidaDoplayer.value = VidaatualDoPlayer;
+
     }
+
+    public void ReiniciarJogo()
+    {
+        Time.timeScale = 1f; // despausa o jogo
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // recarrega a cena atual
+    }
+
 
     public void DanoAoPlayer(int DanoParaReceber)
     {

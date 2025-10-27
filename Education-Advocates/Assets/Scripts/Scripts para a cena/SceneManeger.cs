@@ -16,30 +16,36 @@ public class SceneManeger : MonoBehaviour
     public void TrocaDeCenaStart()
     {
         SceneManager.LoadScene("Start");
+        Time.timeScale = 1f;
     }
     public void TrocaDeCenaEscola()
     {
         SceneManager.LoadScene("escola");
+        Time.timeScale = 1f;
     }
 
     public void TrocaDeCenaRua()
     {
         SceneManager.LoadScene("Rua");
+        Time.timeScale = 1f;
     }
 
     public void TrocaDeCenaQuarto()
     {
         SceneManager.LoadScene("Quarto");
+        Time.timeScale = 1f;
     }
 
     public void TrocaDeCenaMesa()
     {
-        SceneManager.LoadScene("Mesa");
+        SceneManager.LoadScene("Vithenzo");
+        Time.timeScale = 1f;
     }
 
     public void TrocaDeCenaGame()
     {
-        SceneManager.LoadScene("Vithenzo");
+        SceneManager.LoadScene("Créditos");
+        Time.timeScale = 1f;
     }
     
     public void TrocaDeCenaFim()
