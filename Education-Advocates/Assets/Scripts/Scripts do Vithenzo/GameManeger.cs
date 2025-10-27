@@ -1,97 +1,97 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+
 public class GameManeger : MonoBehaviour
 {
     public int SaberAtual;
+
+    public int pontosParaDialogo = 100;
     public int pontosParaVitoria = 150;
 
     public static GameManeger instance;
 
-    [SerializeField] TMP_Text TextodeSaberAtual;
+    [Header("UI")]
+    public TMP_Text TextodeSaberAtual; 
     public GameObject telaVitoria;
-    public GameObject telaDerrota;
 
-    // Variável para a referência do script de vida do player
-    private VidaDoPlayer VidaatualDoPlayer;
+    private bool dialogoAtivado = false;
+
+    [Header("Referências Extras")]
+    public GeradorDeObjetos geradorInimigos;
+    public GameObject painelDialogo; 
 
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject); 
-        }
+        instance = this;
     }
 
     void Start()
     {
-        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
-
-        if (playerObject != null)
-        {
-
-            VidaatualDoPlayer = playerObject.GetComponent<VidaDoPlayer>();
-        }
-
-        Time.timeScale = 1f;
         SaberAtual = 0;
-        TextodeSaberAtual.text = "Saber: " + SaberAtual;
+        AtualizarTextoSaber();
 
-        // Desativa as telas ao iniciar
         if (telaVitoria != null)
             telaVitoria.SetActive(false);
-        if (telaDerrota != null) 
-            telaDerrota.SetActive(false);
-    }
 
-    
-    void Update()
-    {
-        // Verificamos a cada frame se alguma das condições foi alcançada
-        TelaDeVitoria();
-        TelaDeDerrota();
+        if (painelDialogo != null)
+            painelDialogo.SetActive(false);
     }
 
     public void AumentarSaber(int SaberParaGanhar)
     {
         SaberAtual += SaberParaGanhar;
-        TextodeSaberAtual.text = "Saber: " + SaberAtual;
+        AtualizarTextoSaber();
+        Debug.Log("Pontuação atual: " + SaberAtual);
+        VerificarProgresso();
     }
 
-    public void TelaDeVitoria()
+    private void AtualizarTextoSaber()
     {
-        if (SaberAtual >= pontosParaVitoria)
-        {
-            // Se o jogo já está pausado, não faça nada.
-            if (Time.timeScale == 0f) return;
-
-            if (telaVitoria != null)
-                telaVitoria.SetActive(true);
-
-            
-            Time.timeScale = 0f;
-        }
+        if (TextodeSaberAtual != null)
+            TextodeSaberAtual.text = "Saber: " + SaberAtual;
     }
 
-    public void TelaDeDerrota()
+    private void VerificarProgresso()
     {
-        // Verifica se a referência é válida E se a vida <= 0
-        if (VidaatualDoPlayer != null && VidaatualDoPlayer.VidaatualDoPlayer <= 0)
+        // Quando chega na pontuação para o diálogo
+        if (!dialogoAtivado && SaberAtual >= pontosParaDialogo)
         {
-            
-            if (Time.timeScale == 0f) return;
+            dialogoAtivado = true;
+            Debug.Log("Iniciando diálogo!");
 
-            // Mostra a tela de derrota
-            if (telaDerrota != null)
+            // Para os spawns
+            if (geradorInimigos != null)
             {
-                telaDerrota.SetActive(true);
+                geradorInimigos.PausarSpawns();
+                Debug.Log("Spawns pausados!");
             }
 
-            Time.timeScale = 0f;
+            // Mostra o painel de diálogo
+            if (painelDialogo != null)
+            {
+                painelDialogo.SetActive(true);
+                Debug.Log("Painel de diálogo ativado!");
+            }
+        }
+
+        // Tela de vitória
+        if (SaberAtual >= pontosParaVitoria)
+        {
+            if (telaVitoria != null)
+                telaVitoria.SetActive(true);
         }
     }
+
+    // Chamado quando o diálogo terminar
+    public void RetomarJogoAposDialogo()
+    {
+        Debug.Log("Diálogo terminou, retomando spawns...");
+
+        if (geradorInimigos != null)
+            geradorInimigos.RetomarSpawns();
+
+        if (painelDialogo != null)
+            painelDialogo.SetActive(false);
+    }
 }
+

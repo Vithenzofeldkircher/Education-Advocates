@@ -9,9 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04bab3b73afd3e842b96fe31b892cb62, type: 3}
-  m_Name: DialogoDaEscola
+  m_Script: {fileID: 11500000, guid: f74d28913e9afe5488c9b094c002d4b8, type: 3}
+  m_Name: NovoDialogo
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
-  - a
-  - a
+  - nomePersonagem: henrique
+    texto: oiiiiiiiiii
+  - nomePersonagem: henrique
+    texto: oiiiiiiiiii
+  - nomePersonagem: henrique
+    texto: oiiiiiiiiii
+  - nomePersonagem: henrique
+    texto: oiiiiiiiiii
