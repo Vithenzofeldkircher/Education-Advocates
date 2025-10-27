@@ -13,6 +13,13 @@ public class SceneManeger : MonoBehaviour
     {
         
     }
+
+    public void TrocaDeCenaControl()
+    {
+        SceneManager.LoadScene("Control");
+        Time.timeScale = 1f;
+    }
+
     public void TrocaDeCenaStart()
     {
         SceneManager.LoadScene("Start");
