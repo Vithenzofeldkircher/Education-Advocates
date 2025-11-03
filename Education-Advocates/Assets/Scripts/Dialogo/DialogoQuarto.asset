@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: DialogoQuarto
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
+  - nomePersonagem: Henrique
+    texto: "Vou ver qual\xE9 que \xE9 desse cara a\xED"
+  - nomePersonagem: Henrique
+    texto: "Hmmmm... \"An\xEDsio Teixei...ra foi um jurista..., intelectual, educa...dor
+      e escritor brasile......\""
+  - nomePersonagem: Henrique
+    texto: Zzzzzzzzzz.....

@@ -13,11 +13,25 @@ MonoBehaviour:
   m_Name: DialogoRua
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
+  - nomePersonagem: Henrique
+    texto: "Ser\xE1 que eu realmente preciso estudar?"
+  - nomePersonagem: "Tio Z\xE9"
+    texto: "Ei guri! Voc\xEA consegue me ajudar em um neg\xF3cio rapid\xE3o?"
+  - nomePersonagem: Henrique
+    texto: "Pior que n\xE3o posso, tenho que estudar sobre um tal de \"Arnaldo Pereira\"
+      pra uma prova de hist\xF3ria."
+  - nomePersonagem: "Tio Z\xE9"
+    texto: "Voc\xEA quis dizer An\xEDsio Teixeira? Eu estudei bastante sobre ele
+      quando eu tinha sua idade."
+  - nomePersonagem: "Tio Z\xE9"
+    texto: "Voc\xEA quer a biografia dele? Eu tenho guardado l\xE1 em casa, se quiser
+      eu te empresto."
+  - nomePersonagem: Henrique
+    texto: Acho que sim, facilitaria bastante os meus estudos.
   - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
+    texto: (Alguns minutos depois...)
+  - nomePersonagem: "Tio Z\xE9"
+    texto: Aqui, ainda bem que moro perto, quero o livro de volta essa semana, boa
+      sorte na prova!
+  - nomePersonagem: Henrique
+    texto: "Valeu Z\xE9, tenho que ir pra casa agora, falou!"

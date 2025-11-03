@@ -13,11 +13,22 @@ MonoBehaviour:
   m_Name: DialogoEscola
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
+  - nomePersonagem: Henrique
+    texto: "Preciso tirar um 10 na pr\xF3xima prova se n\xE3o eu vou reprovar nessa
+      mat\xE9ria!"
+  - nomePersonagem: "Professor Cl\xE9ber"
+    texto: "Sim, voc\xEA est\xE1 por um fio! Espero que estude bastante para a pr\xF3xima
+      prova. "
+  - nomePersonagem: Henrique
+    texto: "P\xF4 professor, nem sei o que vai cair na prova, resume um pouco a\xED."
+  - nomePersonagem: "Professor Cl\xE9ber"
+    texto: "...Se voc\xEA parasse de dormir durante as aulas saberia que temos estudado
+      bastante o trabalho de \"An\xEDsio Teixeira\" e sua import\xE2ncia para o Brasil."
+  - nomePersonagem: Henrique
+    texto: "Ant\xF4nio Peixeira?"
+  - nomePersonagem: "Professor Cl\xE9ber"
+    texto: ...
+  - nomePersonagem: "Professor Cl\xE9ber"
+    texto: "A aula j\xE1 vai acabar, guarde o seu material e estude bastante!"
+  - nomePersonagem: Henrique
+    texto: Vou ver e te aviso professor.

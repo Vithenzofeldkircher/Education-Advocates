@@ -13,11 +13,23 @@ MonoBehaviour:
   m_Name: DialogoInicio
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
+  - nomePersonagem: ???
+    texto: ...Sistema Iniciando...
+  - nomePersonagem: Henrique
+    texto: "Onde estou? E por que estou ouvindo vozes na minha cabe\xE7a?"
+  - nomePersonagem: CatXPT
+    texto: Boa noite! Eu sou o CatXPT, seu assistente e companheiro durante sua jornada!
+  - nomePersonagem: Henrique
+    texto: "Estou sonhando? Acho que ca\xED no sono durante a minha leitura, o que
+      eu devo fazer para acordar?"
+  - nomePersonagem: CatXPT
+    texto: "Voc\xEA deve passar por ondas de inimigos enquanto se diverte aprendendo
+      o essencial sobre o trabalho de An\xEDsio Teixeira!"
+  - nomePersonagem: Henrique
+    texto: "Eu tenho que estudar at\xE9 nos meus sonhos? Jesus..."
+  - nomePersonagem: Henrique
+    texto: "Mas enfim, \xE9 voc\xEA que vai me ensinar sobre ele? Quando come\xE7amos?"
+  - nomePersonagem: CatXPT
+    texto: "Que bom que perguntou! Quando nossa conversa se encerrar, o jogo come\xE7a!"
+  - nomePersonagem: CatXPT
+    texto: "Vou te guiar com tudo o que precisar, devemos dar in\xEDcio agora?"
