@@ -73,6 +73,7 @@ public class SceneManeger : MonoBehaviour
 
     public void Sair()
     {
+        Debug.Log("Saindo do jogo...");
         Application.Quit();
     }
 }
