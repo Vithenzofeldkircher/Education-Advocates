@@ -23,8 +23,8 @@ MonoBehaviour:
     texto: "Estou sonhando? Acho que ca\xED no sono durante a minha leitura, o que
       eu devo fazer para acordar?"
   - nomePersonagem: CatXPT
-    texto: "Voc\xEA deve passar por ondas de inimigos enquanto se diverte aprendendo
-      o essencial sobre o trabalho de An\xEDsio Teixeira!"
+    texto: "Voc\xEA deve passar por ondas de inimigos e se divertir aprendendo sobre
+      o grande An\xEDsio Teixeira!"
   - nomePersonagem: Henrique
     texto: "Eu tenho que estudar at\xE9 nos meus sonhos? Jesus..."
   - nomePersonagem: Henrique

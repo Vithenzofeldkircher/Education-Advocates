@@ -3004,8 +3004,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -402.50763, y: 103.33004}
-  m_SizeDelta: {x: 284.9847, y: 86.6601}
+  m_AnchoredPosition: {x: -402.50763, y: 87.88636}
+  m_SizeDelta: {x: 284.9847, y: 55.7727}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1088358699
 MonoBehaviour:
@@ -3054,8 +3054,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3415,8 +3415,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.000021563}
-  m_SizeDelta: {x: 1087.7, y: 123.82}
+  m_AnchoredPosition: {x: 0.00002861, y: 0.0000019073}
+  m_SizeDelta: {x: 1070.032, y: 96.515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1330583018
 MonoBehaviour:
@@ -3465,8 +3465,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90
-  m_fontSizeBase: 90
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3535,7 +3535,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1334122359
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3569,7 +3569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b45220ef521ea24481bf5ff711d6df8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogoSistema
-  dialogueData: {fileID: 11400000, guid: ce6b315470b3f6c4bbf38d8272c01d89, type: 2}
+  dialogueData: {fileID: 11400000, guid: e08a90920a983724b9332bc45b0e8985, type: 2}
   dialogueText: {fileID: 1330583018}
   nomeText: {fileID: 1088358699}
   typingSpeed: 0.03
