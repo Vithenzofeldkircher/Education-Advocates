@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: NovoDialogo 4
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
+  - nomePersonagem: CatXPT
+    texto: "Voc\xEA conseguiu! Est\xE1 pronto para estudar sobre o An\xEDsio Teixeira?"
+  - nomePersonagem: Henrique
+    texto: "Acho que sim, come\xE7a a\xED."
+  - nomePersonagem: CatXPT
+    texto: "An\xEDsio Sp\xEDnola Teixeira, nascido em Caetit\xE9 (BA), no dia 12
+      de julho de 1900, foi uma das figuras mais importantes para a educa\xE7\xE3o
+      do Brasil."
+  - nomePersonagem: CatXPT
     texto: 
