@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
   - nomePersonagem: Henrique
-    texto: "Vou ver qual\xE9 que \xE9 desse cara a\xED"
+    texto: "vou ver qual\xE9 que \xE9 desse cara a\xED"
   - nomePersonagem: Henrique
     texto: "Hmmmm... \"An\xEDsio Teixei...ra foi um jurista..., intelectual, educa...dor
       e escritor brasile......\""

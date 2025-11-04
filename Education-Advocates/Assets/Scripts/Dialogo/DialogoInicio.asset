@@ -16,20 +16,26 @@ MonoBehaviour:
   - nomePersonagem: ???
     texto: ...Sistema Iniciando...
   - nomePersonagem: Henrique
-    texto: "Onde estou? E por que estou ouvindo vozes na minha cabe\xE7a?"
+    texto: "onde \xE9 q eu t\xF4??? pq t\xF4 ouvindo vozes na minha cabe\xE7a??"
   - nomePersonagem: CatXPT
-    texto: Boa noite! Eu sou o CatXPT, seu assistente e companheiro durante sua jornada!
+    texto: "Boa noite! Voc\xEA acabou caindo no sono e agora est\xE1 no \"void\"."
   - nomePersonagem: Henrique
-    texto: "Estou sonhando? Acho que ca\xED no sono durante a minha leitura, o que
-      eu devo fazer para acordar?"
+    texto: "void? nunca ouvi falar, onde q \xE9 isso?"
   - nomePersonagem: CatXPT
-    texto: "Voc\xEA deve passar por ondas de inimigos e se divertir aprendendo sobre
-      o grande An\xEDsio Teixeira!"
+    texto: "Voc\xEA est\xE1 no espa\xE7o dos sonhos onde as suas distra\xE7\xF5es
+      se tornaram inimigos perigosos."
+  - nomePersonagem: CatXPT
+    texto: "Para prosseguir voc\xEA deve acabar com ondas de inimigos enquanto aprende
+      conhecimentos valiosos sobre o An\xEDsio Teixeira para a sua prova!"
   - nomePersonagem: Henrique
-    texto: "Eu tenho que estudar at\xE9 nos meus sonhos? Jesus..."
+    texto: "eu tenho q estudar at\xE9 nos meus sonhos? meu Deus!"
   - nomePersonagem: Henrique
-    texto: "Mas enfim, \xE9 voc\xEA que vai me ensinar sobre ele? Quando come\xE7amos?"
+    texto: e esses inimigos? vai ser tipo um spaceshooter?
   - nomePersonagem: CatXPT
-    texto: "Que bom que perguntou! Quando nossa conversa se encerrar, o jogo come\xE7a!"
-  - nomePersonagem: CatXPT
-    texto: "Irei te guiar com tudo o que precisar, devemos dar in\xEDcio agora?"
+    texto: "Exatamente! Voc\xEA parece gostar de jogos nesse estilo, ent\xE3o tenho
+      certeza que n\xE3o ser\xE1 de grande dificuldade."
+  - nomePersonagem: 
+    texto: "t\xE1 bom ent\xE3o n\xE9, quando isso come\xE7a?"
+  - nomePersonagem: 
+    texto: "Quando nossa conversa terminar voc\xEA poder\xE1 come\xE7ar a sua jornada!
+      Te guiarei com as coisas que precisar, est\xE1 pronto?"
