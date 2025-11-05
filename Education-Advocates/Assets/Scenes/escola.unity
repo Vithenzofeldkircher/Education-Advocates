@@ -736,6 +736,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3972855017643244144, guid: 4b4b0fee022644f4094b103886b688d1, type: 3}
+      propertyPath: canAdvance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972855017643244144, guid: 4b4b0fee022644f4094b103886b688d1, type: 3}
       propertyPath: dialogueData
       value: 
       objectReference: {fileID: 11400000, guid: ec38b7af8fc37b7489b556b9e7b3c40b, type: 2}

@@ -14,7 +14,6 @@ public class GameManeger : MonoBehaviour
     public TMP_Text TextodeSaberAtual; 
     public GameObject telaVitoria;
 
-    private bool dialogoAtivado = false;
 
     [Header("Referências Extras")]
     public GeradorDeObjetos geradorInimigos;
