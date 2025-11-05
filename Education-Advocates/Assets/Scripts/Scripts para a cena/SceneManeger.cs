@@ -57,7 +57,7 @@ public class SceneManeger : MonoBehaviour
     
     public void TrocaDeCenaFim()
     {
-        SceneManager.LoadScene("Fim");
+        SceneManager.LoadScene("FimQuarto");
     }
 
     public void TrocaDeCenaCreditos()
