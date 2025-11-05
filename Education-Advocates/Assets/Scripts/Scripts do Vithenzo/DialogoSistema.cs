@@ -103,7 +103,7 @@ public class DialogoSistema : MonoBehaviour
             dialogueText.text += c;
             yield return new WaitForSeconds(typingSpeed);
         }
-
+        
         isTyping = false;
     }
 

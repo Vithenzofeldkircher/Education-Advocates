@@ -12,12 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74d28913e9afe5488c9b094c002d4b8, type: 3}
   m_Name: DialogoFinalSS
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  falas:
-  - nomePersonagem: CatXPT
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
+  falas: []
