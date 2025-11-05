@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
   - nomePersonagem: CatXPT
-    texto: "...sim acabamos de conseguir novas informa\xE7oes sobre o Sr.An\xEDsio"
+    texto: "Acabamos de conseguir novas informa\xE7\xF5es sobre o An\xEDsio Teixeira."
   - nomePersonagem: Henrique
     texto: "Oxi fala a\xED ent\xE3o par\xE7a"
   - nomePersonagem: CatXPT
-    texto: " An\xEDsio foi um educador e fil\xF3sofo brasileiro e defensor da democratiza\xE7\xE3o
-      do ensino"
+    texto: "An\xEDsio foi um educador, fil\xF3sofo brasileiro e defensor da democratiza\xE7\xE3o
+      do ensino."
   - nomePersonagem: Henrique
     texto: "OLOKO, o cara era cerebro ent\xE3o?"
   - nomePersonagem: CatXPT
-    texto: "Disso n\xE3o da de se duvidar"
+    texto: "Disso n\xE3o da de se duvidar."

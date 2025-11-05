@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
   - nomePersonagem: CatXPT
-    texto: "Acho que isso capiut\xE3o temos quase todas as informe\xE7oes necassarias,
-      so mais um pouco"
+    texto: "Acho que \xE9 isso Capit\xE3o, temos quase todas as informa\xE7\xF5es
+      necess\xE1rias, falta s\xF3 mais um pouco."
   - nomePersonagem: Henrique
     texto: Pode deixar Cat

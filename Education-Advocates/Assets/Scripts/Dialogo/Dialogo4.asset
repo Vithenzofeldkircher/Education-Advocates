@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
   - nomePersonagem: CatXPT
-    texto: "O misterio foi desvendado capit\xE3o!!!"
+    texto: "O mist\xE9rio foi desvendado Capit\xE3o!!!"
   - nomePersonagem: Henrique
     texto: "slc par\xE7a o que aconteceu? o que a gente descobriu?"
   - nomePersonagem: CatXPT
@@ -24,17 +24,18 @@ MonoBehaviour:
   - nomePersonagem: Henrique
     texto: "oloko par\xE7a, mas porque os federal queria o An\xEDsio???"
   - nomePersonagem: CatXPT
-    texto: "Simples capit\xE3o, An\xEDsio era um homem estudado, e o estudo faz as
-      pessoas pensarem e isso irritava o governo."
+    texto: "\xC9 simples Capit\xE3o, An\xEDsio era um homem inteligente que queria
+      mudar as coisas, o estudo e a sensatez fazem as pessoas pensarem e isso irritava
+      profundamente o governo."
   - nomePersonagem: Henrique
-    texto: "To ligado agora, mas e a\xED? o que rolou depois?"
+    texto: "t\xF4 ligado agora, mas e a\xED? o que rolou depois?"
   - nomePersonagem: CatXPT
-    texto: "morreu em 11 de mar\xE7o de 1971, no Rio de Janeiro, em circunst\xE2ncias
-      consideradas misteriosas"
+    texto: "Foi encontrado morto em 11 de mar\xE7o de 1971, no Rio de Janeiro, em
+      circunst\xE2ncias consideradas \"misteriosas\"."
   - nomePersonagem: Henrique
-    texto: OXI?!?!??! Como assim? o que rolou? pipocaram ele?
+    texto: OXI?!?!??! Como assim? O que rolou? Pipocaram ele?
   - nomePersonagem: CatXPT
-    texto: "os documentos da \xE9poca dizem terem encontrado an\xEDsio no fo\xE7o
-      de um elevador, muitos dizem que foi o governo que fez isso"
+    texto: "Os documentos da \xE9poca dizem terem encontrado An\xEDsio no fosso de
+      um elevador, muitos dizem que o governo fez isso, mas nada foi comprovado."
   - nomePersonagem: CatXPT
     texto: "O rapaz nao merecia isso a\xED n\xE3o truta...."

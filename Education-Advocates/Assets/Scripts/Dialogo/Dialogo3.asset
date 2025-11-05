@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
   - nomePersonagem: CatXPT
-    texto: "eita, uma fofoca historica acabou de chegar capit\xE3o"
+    texto: "Eita! Uma fofoca valiosa acabou de chegar Capit\xE3o!"
   - nomePersonagem: Henrique
-    texto: "vish sa\xED dessa bicho, n\xE3o curto fofoca...."
-  - nomePersonagem: Hemrique
-    texto: Mas se quiser contar assim, eu nao me importo de escutar
+    texto: "vish sai dessa bicho, n\xE3o curto fofoca...."
+  - nomePersonagem: Henrique
+    texto: mas se quiser me contar mesmo assim, eu nao me importaria de escutar
   - nomePersonagem: CatXPT
-    texto: ah sim entendi
+    texto: Ah sim, entendo.
   - nomePersonagem: CatXPT
     texto: "Bom, An\xEDsio Teixeira foi perseguido e demitiu-se do cargo que ocupava
       em 1936."
   - nomePersonagem: Hemrique
-    texto: Oxi mas porque disso? mlk chapou foi?
+    texto: oxi mas porque disso? mlk chapou foi?
   - nomePersonagem: CatXPT
     texto: "Acho que logo logo descobriremos capit\xE3o"

@@ -16,6 +16,7 @@ MonoBehaviour:
   - nomePersonagem: Henrique
     texto: Mano que brisa que foi essa???
   - nomePersonagem: Henrique
-    texto: Carcara esse sonho foi doido mesmo, meu deus eu ja to atrasado pra prova!!!
+    texto: "Caraca esse sonho foi doido mesmo, meu Deus eu ja t\xF4 atrasado pra
+      prova!!!"
   - nomePersonagem: Henrique
-    texto: To indo vazado daqui
+    texto: "T\xF4 vazando daqui!"
