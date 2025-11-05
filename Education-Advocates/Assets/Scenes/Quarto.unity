@@ -177,7 +177,6 @@ MonoBehaviour:
   typingSpeed: 0.001
   mudaCenaAoTerminar: 1
   nextSceneName: Vithenzo
-  canAdvance: 1
 --- !u!114 &458110182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -553,7 +552,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 2a6e30eef93be2946906068163daeb1e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

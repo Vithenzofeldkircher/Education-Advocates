@@ -382,7 +382,6 @@ MonoBehaviour:
   typingSpeed: 0.01
   mudaCenaAoTerminar: 1
   nextSceneName: Quarto
-  canAdvance: 1
 --- !u!114 &884250247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -940,7 +939,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: cfc3e20d3b6aed04dad1f7e19b051a7c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.203
+  m_Volume: 0.155
   m_Pitch: 1
   Loop: 0
   Mute: 0
