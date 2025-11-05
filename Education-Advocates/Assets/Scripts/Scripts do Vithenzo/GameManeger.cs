@@ -5,8 +5,7 @@ public class GameManeger : MonoBehaviour
 {
     public int SaberAtual;
 
-    public int pontosParaDialogo = 100;
-    public int pontosParaVitoria = 150;
+    public int pontosParaVitoria = 1000;
 
     public static GameManeger instance;
 

@@ -171,13 +171,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b45220ef521ea24481bf5ff711d6df8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogoSistema
-  dialogueData: {fileID: 11400000, guid: ec38b7af8fc37b7489b556b9e7b3c40b, type: 2}
+  dialogueData: {fileID: 11400000, guid: c701847564bfebd4c9c6fbf848f512b7, type: 2}
   dialogueText: {fileID: 750613117}
   nomeText: {fileID: 1403059195}
   typingSpeed: 0.01
   mudaCenaAoTerminar: 1
   nextSceneName: FimEscola
-  canAdvance: 1
 --- !u!114 &46307337
 MonoBehaviour:
   m_ObjectHideFlags: 0

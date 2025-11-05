@@ -1766,10 +1766,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogoPorPontos
   dialogoSistema: {fileID: 1334122360}
   dialogosPorPontos:
-  - {fileID: 11400000, guid: ec38b7af8fc37b7489b556b9e7b3c40b, type: 2}
-  - {fileID: 11400000, guid: ce6b315470b3f6c4bbf38d8272c01d89, type: 2}
   - {fileID: 11400000, guid: e08a90920a983724b9332bc45b0e8985, type: 2}
-  pontosParaAtivar: 3c000000fa0000005e010000
+  - {fileID: 11400000, guid: 6e9d69241ae251b4db9c3988fe5f5e35, type: 2}
+  - {fileID: 11400000, guid: caefa48966a7f934a9f762f31f49d60c, type: 2}
+  - {fileID: 11400000, guid: 0df94518e13234343bcd37a6b9aa4639, type: 2}
+  - {fileID: 11400000, guid: 8a9ad65d53db7ef4abd427c9099af9b3, type: 2}
+  - {fileID: 11400000, guid: db1183104e3ce534b85dd08e4dce4f3a, type: 2}
+  pontosParaAtivar: 01000000fa000000f4010000bc02000052030000b6030000
 --- !u!4 &613328494
 Transform:
   m_ObjectHideFlags: 0
@@ -3625,7 +3628,6 @@ MonoBehaviour:
   typingSpeed: 0.03
   mudaCenaAoTerminar: 0
   nextSceneName: NomeDaProximaCena
-  canAdvance: 1
 --- !u!114 &1334122361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4561,9 +4563,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d61aefc2d0c4d34fb0dbe3c41fec15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SaberAtual: 0
-  pontosParaDialogo: 100
-  pontosParaVitoria: 5000
+  SaberAtual: 999
+  pontosParaVitoria: 1000
   TextodeSaberAtual: {fileID: 164017378}
   telaVitoria: {fileID: 2119853833}
   geradorInimigos: {fileID: 711659680}

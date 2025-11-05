@@ -14,10 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
   - nomePersonagem: CatXPT
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
-  - nomePersonagem: 
-    texto: 
+    texto: "Novas informa\xE7oes chegam quentinhas capit\xE3o"
+  - nomePersonagem: Henrique
+    texto: "SLC que neurose rapa, o que a gente pegou a\xED Cat???"
+  - nomePersonagem: CatXPT
+    texto: "Em vida, ele foi respons\xE1vel pela cria\xE7\xE3o da Escola Parque em
+      Salvador, da Universidade de Bras\xEDlia (UnB), da qual foi reitor."
+  - nomePersonagem: Henrique
+    texto: "Caraca ent\xE3o ele era dos engravatados \xE9? o cara era importante"
+  - nomePersonagem: CatXPT
+    texto: Sim e como todo homem importante ele tinha "inimigos"
+  - nomePersonagem: Henrique
+    texto: oxi como assim??? tavam na maldade dele?
+  - nomePersonagem: CatXPT
+    texto: "Provavelmente n\xE3o tenho essa informa\xE7\xE3o agora capit\xE3o"
+  - nomePersonagem: Henrique
+    texto: "Slc rapa, tem muito caro\xE7o nesse angu a\xED ein"

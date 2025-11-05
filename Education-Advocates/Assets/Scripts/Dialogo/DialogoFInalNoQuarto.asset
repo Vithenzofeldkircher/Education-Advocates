@@ -10,6 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f74d28913e9afe5488c9b094c002d4b8, type: 3}
-  m_Name: DialogoFinalSS
+  m_Name: DialogoFInalNoQuarto
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  falas: []
+  falas:
+  - nomePersonagem: Henrique
+    texto: Mano que brisa que foi essa???
+  - nomePersonagem: Henrique
+    texto: Carcara esse sonho foi doido mesmo, meu deus eu ja to atrasado pra prova!!!
+  - nomePersonagem: Henrique
+    texto: To indo vazado daqui
