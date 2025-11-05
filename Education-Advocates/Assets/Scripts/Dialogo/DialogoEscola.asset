@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
   - nomePersonagem: Henrique
-    texto: "t\xF4 ferrado, preciso gabaritar a prova pra passar esse trimestre"
+    texto: "t\xF4 ferrado, preciso gabaritar a prova pra passar nesse trimestre"
   - nomePersonagem: "Professor Cl\xE9ber"
     texto: "Sim, voc\xEA est\xE1 por um fio! Espero que estude bastante para a pr\xF3xima
       avalia\xE7\xE3o. "

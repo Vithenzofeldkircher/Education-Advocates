@@ -27,11 +27,11 @@ MonoBehaviour:
     texto: "Voc\xEA quer a biografia dele? Eu tenho guardado l\xE1 em casa, se quiser
       eu te empresto."
   - nomePersonagem: Henrique
-    texto: 'eu aceito, '
+    texto: eu aceito, vai ajudar bastante
   - nomePersonagem: 
     texto: (Alguns minutos depois...)
   - nomePersonagem: "Tio Z\xE9"
-    texto: Aqui, ainda bem que moro perto, quero o livro de volta essa semana, boa
-      sorte na prova!
+    texto: Aqui, ainda bem que moro perto, quero o livro de volta no fim dessa semana,
+      boa sorte na prova!
   - nomePersonagem: Henrique
-    texto: "Valeu Z\xE9, tenho que ir pra casa agora, falou!"
+    texto: "valeu Z\xE9, v\xF4 pra casa agora, flw!"

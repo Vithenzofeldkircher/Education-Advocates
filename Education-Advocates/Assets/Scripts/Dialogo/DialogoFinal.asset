@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f74d28913e9afe5488c9b094c002d4b8, type: 3}
-  m_Name: DialogoQuarto
+  m_Name: DialogoFinal
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   falas:
-  - nomePersonagem: Henrique
-    texto: "vou ver qual\xE9 que \xE9 a desse cara a\xED"
-  - nomePersonagem: Henrique
-    texto: (Abre o livro)
-  - nomePersonagem: Henrique
-    texto: "Hmmmm... \"An\xEDsio Teixei...ra foi um jurista..., intelectual, educa...dor
-      e escritor brasile......\""
-  - nomePersonagem: Henrique
-    texto: Zzzzzzzzzz.....
+  - nomePersonagem: CatXPT
+    texto: 
+  - nomePersonagem: 
+    texto: 
+  - nomePersonagem: 
+    texto: 
+  - nomePersonagem: 
+    texto: 
