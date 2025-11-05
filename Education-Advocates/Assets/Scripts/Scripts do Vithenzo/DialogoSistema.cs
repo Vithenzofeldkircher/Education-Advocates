@@ -12,48 +12,37 @@ public class DialogoSistema : MonoBehaviour
     public float typingSpeed = 0.03f;
 
     [Header("Configurações")]
-    public bool mudaCenaAoTerminar = false; // define se troca de cena ou não
-    public string nextSceneName = "";       // nome da cena para mudaasred
+    public bool mudaCenaAoTerminar = false;
+    public string nextSceneName = "";
 
     int currentLine = 0;
     bool isTyping = false;
-    bool canAdvance = true;
+    public bool canAdvance = true; // tornamos público para debug (se quiser)
 
     void Start()
     {
-        if (dialogueData == null || dialogueData.falas.Count == 0)
-        {
-            Debug.LogError("DialogueData não configurado ou vazio");
-            return;
-        }
-
-        MostrarFalaAtual();
+        // NÃO iniciar diálogo automaticamente aqui — será feito por IniciarDialogo()
     }
 
     void Update()
     {
         if (!canAdvance)
-        {
-            // Se deve mudar de cena no final
-            if (mudaCenaAoTerminar && Input.GetKeyDown(KeyCode.F))
-            {
-                TrocarCena();
-            }
             return;
-        }
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
             if (isTyping)
             {
+                // completa a linha imediatamente
                 StopAllCoroutines();
-                dialogueText.text = dialogueData.falas[currentLine].texto;
+                if (dialogueData != null && currentLine < dialogueData.falas.Count)
+                    dialogueText.text = dialogueData.falas[currentLine].texto;
                 isTyping = false;
             }
             else
             {
                 currentLine++;
-                if (currentLine < dialogueData.falas.Count)
+                if (dialogueData != null && currentLine < dialogueData.falas.Count)
                 {
                     MostrarFalaAtual();
                 }
@@ -63,6 +52,12 @@ public class DialogoSistema : MonoBehaviour
                 }
             }
         }
+
+        // opcional: trocar cena no fim com tecla F
+        if (!canAdvance && mudaCenaAoTerminar && Input.GetKeyDown(KeyCode.F))
+        {
+            TrocarCena();
+        }
     }
 
     IEnumerator TypeLine(string line)
@@ -70,9 +65,9 @@ public class DialogoSistema : MonoBehaviour
         isTyping = true;
         dialogueText.text = "";
 
-        foreach (char c in line)
+        for (int i = 0; i < line.Length; i++)
         {
-            dialogueText.text += c;
+            dialogueText.text += line[i];
             yield return new WaitForSeconds(typingSpeed);
         }
 
@@ -81,50 +76,70 @@ public class DialogoSistema : MonoBehaviour
 
     void MostrarFalaAtual()
     {
+        if (dialogueData == null || dialogueData.falas == null || dialogueData.falas.Count == 0)
+            return;
+
         if (currentLine < 0 || currentLine >= dialogueData.falas.Count)
             return;
 
         var falaAtual = dialogueData.falas[currentLine];
         nomeText.text = falaAtual.nomePersonagem;
-        dialogueText.text = "";
+        // garante que qualquer typing em andamento seja parado antes de iniciar outro
+        StopAllCoroutines();
         StartCoroutine(TypeLine(falaAtual.texto));
+    }
+
+    public void IniciarDialogo()
+    {
+        if (dialogueData == null || dialogueData.falas == null || dialogueData.falas.Count == 0)
+        {
+            Debug.LogWarning("[DialogoSistema] DialogueData vazio ao iniciar.");
+            return;
+        }
+
+        currentLine = 0;
+        canAdvance = true;
+        // garante que o GameObject esteja ativo antes de iniciar
+        if (!gameObject.activeSelf)
+            gameObject.SetActive(true);
+
+        // Para evitar que coroutines antigas continuem, limpa tudo
+        StopAllCoroutines();
+        MostrarFalaAtual();
     }
 
     void TrocarCena()
     {
         if (!string.IsNullOrEmpty(nextSceneName))
-        {
-            Debug.Log("Carregando próxima cena: " + nextSceneName);
             SceneManager.LoadScene(nextSceneName);
-        }
         else
-        {
-            Debug.LogWarning("Nome da próxima cena não configurado.");
-        }
+            Debug.LogWarning("[DialogoSistema] nextSceneName vazio.");
     }
 
-    void EncerrarDialogo()
+    public void EncerrarDialogo()
     {
+        // evita múltiplas execuções
+        if (!canAdvance && !gameObject.activeSelf) return;
+
         dialogueText.text = "";
         nomeText.text = "";
         canAdvance = false;
 
-        // ✅ Se deve mudar de cena no final
         if (mudaCenaAoTerminar)
         {
-            Debug.Log("Fim do diálogo — aguardando tecla F para trocar de cena.");
+            Debug.Log("[DialogoSistema] Fim do diálogo aguardando tecla F para trocar de cena.");
         }
         else
         {
-            // ✅ Se for dentro do jogo, retoma o spawn dos inimigos
             if (GameManeger.instance != null)
             {
-                Debug.Log("Fim do diálogo — retomando jogo normalmente.");
+                Debug.Log("[DialogoSistema] Fim do diálogo, avisando GameManager.");
                 GameManeger.instance.RetomarJogoAposDialogo();
             }
 
-            // Desativa o painel de diálogo (já é feito no GameManeger)
-            gameObject.SetActive(false);
+            // garante desativação do painel (fechamento do diálogo)
+            if (gameObject.activeSelf)
+                gameObject.SetActive(false);
         }
     }
 }

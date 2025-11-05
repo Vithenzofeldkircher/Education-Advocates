@@ -52,28 +52,7 @@ public class GameManeger : MonoBehaviour
     }
 
     private void VerificarProgresso()
-    {
-        // Quando chega na pontuação para o diálogo
-        if (!dialogoAtivado && SaberAtual >= pontosParaDialogo)
-        {
-            dialogoAtivado = true;
-            Debug.Log("Iniciando diálogo!");
-
-            // Para os spawns
-            if (geradorInimigos != null)
-            {
-                geradorInimigos.PausarSpawns();
-                Debug.Log("Spawns pausados!");
-            }
-
-            // Mostra o painel de diálogo
-            if (painelDialogo != null)
-            {
-                painelDialogo.SetActive(true);
-                Debug.Log("Painel de diálogo ativado!");
-            }
-        }
-
+    { 
         // Tela de vitória
         if (SaberAtual >= pontosParaVitoria)
         {

@@ -7,7 +7,7 @@ public class GeradorDeObjetos : MonoBehaviour
     public float tempoMaximoEntreOsSpwans;
     public float TempoAtualDosSpwans;
 
-    private bool podeSpawnar = true; 
+    public bool PodeSpawnar { get; private set; } = true;
 
     void Start()
     {
@@ -16,7 +16,7 @@ public class GeradorDeObjetos : MonoBehaviour
 
     void Update()
     {
-        if (!podeSpawnar) return; 
+        if (!PodeSpawnar) return; 
 
         TempoAtualDosSpwans -= Time.deltaTime;
 
@@ -41,12 +41,12 @@ public class GeradorDeObjetos : MonoBehaviour
     // NOVOS MÉTODOS:
     public void PausarSpawns()
     {
-        podeSpawnar = false;
+        PodeSpawnar = false;
     }
 
     public void RetomarSpawns()
     {
-        podeSpawnar = true;
+        PodeSpawnar = true;
         TempoAtualDosSpwans = tempoMaximoEntreOsSpwans;
     }
 }
