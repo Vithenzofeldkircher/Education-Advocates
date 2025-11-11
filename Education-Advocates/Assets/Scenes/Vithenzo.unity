@@ -1030,7 +1030,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 5a58ee2d683f8a644846f0f4a0ee6a21, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2209,7 +2209,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 74ed876024cc9ad4a9f50889809f3b27, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2303,6 +2303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 711659681}
   - component: {fileID: 711659680}
+  - component: {fileID: 711659682}
   m_Layer: 0
   m_Name: Gerador De Inimigos
   m_TagString: Untagged
@@ -2390,6 +2391,20 @@ Transform:
   - {fileID: 620108361}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &711659682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711659679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3187fb2a819e9c4682fd7a94a10d4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollectibleItem
+  collectSound: {fileID: 8300000, guid: 159aed15765632b4da1dc01510cb6f52, type: 3}
+  volume: 1
 --- !u!1 &770980863
 GameObject:
   m_ObjectHideFlags: 0
