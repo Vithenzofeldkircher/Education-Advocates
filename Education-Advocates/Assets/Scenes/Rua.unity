@@ -784,13 +784,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel do dialogo
       objectReference: {fileID: 0}
+    - target: {fileID: 8272291668744573399, guid: 189b1b1dbbb72824a92b66717fdee031, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1303.8549
+      objectReference: {fileID: 0}
+    - target: {fileID: 8272291668744573399, guid: 189b1b1dbbb72824a92b66717fdee031, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 236.60416
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825835544713832880, guid: 189b1b1dbbb72824a92b66717fdee031, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 636.0913
+      objectReference: {fileID: 0}
     - target: {fileID: 8825835544713832880, guid: 189b1b1dbbb72824a92b66717fdee031, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 78.7224
+      value: 85.4267
+      objectReference: {fileID: 0}
+    - target: {fileID: 8825835544713832880, guid: 189b1b1dbbb72824a92b66717fdee031, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -577.00006
       objectReference: {fileID: 0}
     - target: {fileID: 8825835544713832880, guid: 189b1b1dbbb72824a92b66717fdee031, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 167.22226
+      value: 169.61665
       objectReference: {fileID: 0}
     - target: {fileID: 9172208582136026399, guid: 189b1b1dbbb72824a92b66717fdee031, type: 3}
       propertyPath: m_Pivot.x
