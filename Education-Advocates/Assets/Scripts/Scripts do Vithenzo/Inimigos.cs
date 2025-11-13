@@ -6,6 +6,8 @@ public class Inimigos : MonoBehaviour
 
     public Transform LocalDoDisparo;
 
+    public Transform SegundoLocalDeDisparo;
+
     public GameObject ItemParaDropar;
 
     public float velocidadeDoInimigo;
@@ -15,6 +17,8 @@ public class Inimigos : MonoBehaviour
     public float tempoAtualDosLasers;
 
     public bool InimigoAtirador;
+
+    public bool InimigosDeDisparoDuplo;
 
     public int VidaMaximaDoInimigo;
 
