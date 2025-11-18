@@ -3218,8 +3218,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -375.44547, y: 108}
-  m_SizeDelta: {x: 336.8538, y: 55.7727}
+  m_AnchoredPosition: {x: -325.2744, y: 75.5}
+  m_SizeDelta: {x: 356.3769, y: 36.8793}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1088358699
 MonoBehaviour:
@@ -3268,14 +3268,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3629,8 +3629,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00002861, y: 0.0000019073}
-  m_SizeDelta: {x: 1070.032, y: 96.515}
+  m_AnchoredPosition: {x: 1.1133, y: -30.171518}
+  m_SizeDelta: {x: 984.2585, y: 115.4581}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1330583018
 MonoBehaviour:
@@ -3768,8 +3768,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 31, y: -432}
-  m_SizeDelta: {x: -832.2516, y: -925.0201}
+  m_AnchoredPosition: {x: 31, y: -389.40405}
+  m_SizeDelta: {x: -832.2516, y: -839.8282}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1334122360
 MonoBehaviour:
@@ -3802,15 +3802,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2744957630537380131, guid: c5963c7d8a1a29f45abacf074ead0b4f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
