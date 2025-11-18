@@ -11,6 +11,7 @@ public class DialogueData : ScriptableObject
         public string nomePersonagem;   // nome acima da fala
         [TextArea(2, 5)]
         public string texto;            // fala do personagem
+        public int IdPersonagem; //incede para a imagem do personagem
     }
 
     public List<Fala> falas = new List<Fala>();

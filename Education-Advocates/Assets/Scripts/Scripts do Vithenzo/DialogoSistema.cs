@@ -5,6 +5,9 @@ using System.Collections;
 
 public class DialogoSistema : MonoBehaviour
 {
+    [Header("Faces")]
+    public AnimacaoDoRosto animacaoDoRosto;
+
     [Header("Referências")]
     public DialogueData dialogueData;
     public TMP_Text dialogueText;
@@ -89,6 +92,13 @@ public class DialogoSistema : MonoBehaviour
 
         var falaAtual = dialogueData.falas[currentLine];
         nomeText.text = falaAtual.nomePersonagem;
+        StopAllCoroutines();
+        StartCoroutine(TypeLine(falaAtual.texto));
+
+        nomeText.text = falaAtual.nomePersonagem;
+        if(animacaoDoRosto != null)
+            animacaoDoRosto.MostraPersonagem(falaAtual.IdPersonagem);
+
         StopAllCoroutines();
         StartCoroutine(TypeLine(falaAtual.texto));
     }
