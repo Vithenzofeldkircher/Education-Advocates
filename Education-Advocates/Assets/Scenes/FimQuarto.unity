@@ -147,7 +147,7 @@ RectTransform:
   m_GameObject: {fileID: 46307334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7294395, y: 0.7294395, z: 0.7294395}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 750613116}
@@ -156,8 +156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -340.6449}
-  m_SizeDelta: {x: -78.7444, y: -730.9631}
+  m_AnchoredPosition: {x: 40.999985, y: -250.99997}
+  m_SizeDelta: {x: 14.425934, y: -540.6362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &46307336
 MonoBehaviour:
@@ -328,8 +328,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 310.2494, y: -46}
-  m_SizeDelta: {x: 1094.3318, y: 196.7211}
+  m_AnchoredPosition: {x: 267.2108, y: -64.95535}
+  m_SizeDelta: {x: 1222.648, y: 256.9286}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &750613117
 MonoBehaviour:
@@ -351,7 +351,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -378,8 +378,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -775,8 +775,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -637, y: 105.17}
-  m_SizeDelta: {x: 452.3441, y: 77.873}
+  m_AnchoredPosition: {x: -574, y: 170.2572}
+  m_SizeDelta: {x: 632.5006, y: 83.5464}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1403059195
 MonoBehaviour:
@@ -798,7 +798,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -2038,7 +2038,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Voc\xEA conseguio, voce levou todas as informa\xE7\xF5es para o cerebro."
+  m_text: "Voc\xEA conseguiu, a miss\xE3o de levar todas as informa\xE7\xF5es necess\xE1rias
+    para o c\xE9rebro foi um sucesso!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2525,7 +2526,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Voce nao conseguio levar as informa\xE7\xF5es para o cerebro e tirou 0."
+  m_text: "Voc\xEA falhou na miss\xE3o de levar as informa\xE7\xF5es para o c\xE9rebro
+    e tirou 0 na prova."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
