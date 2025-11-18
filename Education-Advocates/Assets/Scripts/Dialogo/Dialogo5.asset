@@ -15,6 +15,7 @@ MonoBehaviour:
   falas:
   - nomePersonagem: CatXPT
     texto: "Acho que \xE9 isso Capit\xE3o, temos quase todas as informa\xE7\xF5es
-      necess\xE1rias, falta s\xF3 mais um pouco."
+      necess\xE1rias, falta s\xF3 mais um pouco para a carga estar completa e voc\xEA
+      poder sair daqui."
   - nomePersonagem: Henrique
-    texto: Pode deixar Cat
+    texto: Pode deixar Cat.
